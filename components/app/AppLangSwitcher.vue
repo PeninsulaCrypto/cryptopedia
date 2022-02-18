@@ -27,10 +27,10 @@
 <script>
 export default {
   computed: {
-    availableLocales() {
+    availableLocales () {
       //   return this.$i18n.locales.filter((i) => i.code !== this.$i18n.locale);
-      return this.$i18n.locales;
-    },
-  },
-};
+      return this.$i18n.locales
+    }
+  }
+}
 </script>

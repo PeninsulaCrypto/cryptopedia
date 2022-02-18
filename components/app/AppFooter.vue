@@ -11,20 +11,18 @@
           <FooterInfoDark class="h-4 dark-img" />
         </a>
       </div>
-      <div class="flex items-center space-x-4">
-
-      </div>
+      <div class="flex items-center space-x-4" />
     </div>
   </footer>
 </template>
 
 <script>
 export default {
-  name: "AppFooter",
+  name: 'AppFooter',
   computed: {
-    availableLocales() {
-      return this.$i18n.locales.filter((i) => i.code !== this.$i18n.locale);
-    },
-  },
-};
+    availableLocales () {
+      return this.$i18n.locales.filter(i => i.code !== this.$i18n.locale)
+    }
+  }
+}
 </script>

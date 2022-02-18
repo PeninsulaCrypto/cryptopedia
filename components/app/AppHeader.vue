@@ -32,13 +32,13 @@
           :src="logo.light"
           class="h-8 max-w-full light-img align-middle"
           :alt="settings.title"
-        />
+        >
         <img
           v-if="logo"
           :src="logo.dark"
           class="h-8 max-w-full dark-img align-middle"
           :alt="settings.title"
-        />
+        >
       </NuxtLink>
     </div>
 
@@ -91,8 +91,9 @@
             :to="localePath('/releases')"
             class="font-semibold leading-none text-gray-700 dark:text-gray-300 hover:text-primary-500 dark-hover:text-primary-500 text-base mr-4"
             exact-active-class="text-primary-500"
-            >{{ lastRelease.name }}</NuxtLink
           >
+            {{ lastRelease.name }}
+          </NuxtLink>
           <AppLangSwitcher />
           <AppColorSwitcher />
           <div class="flex items-center">
@@ -142,55 +143,55 @@
 </template>
 
 <script>
-import { mapGetters } from "vuex";
+import { mapGetters } from 'vuex'
 export default {
-  data() {
+  data () {
     return {
-      scrolled: 0,
-    };
+      scrolled: 0
+    }
   },
   computed: {
-    ...mapGetters(["settings", "githubUrls", "lastRelease"]),
+    ...mapGetters(['settings', 'githubUrls', 'lastRelease']),
     menu: {
-      get() {
-        return this.$store.state.menu.open;
+      get () {
+        return this.$store.state.menu.open
       },
-      set(val) {
-        this.$store.commit("menu/toggle", val);
-      },
-    },
-    logo() {
-      if (!this.settings.logo) {
-        return;
+      set (val) {
+        this.$store.commit('menu/toggle', val)
       }
-      if (typeof this.settings.logo === "object") {
-        return this.settings.logo;
+    },
+    logo () {
+      if (!this.settings.logo) {
+        return
+      }
+      if (typeof this.settings.logo === 'object') {
+        return this.settings.logo
       }
       return {
         light: this.settings.logo,
-        dark: this.settings.logo,
-      };
-    },
+        dark: this.settings.logo
+      }
+    }
   },
-  beforeMount() {
-    window.addEventListener("scroll", this.handleScroll);
+  beforeMount () {
+    window.addEventListener('scroll', this.handleScroll)
   },
-  beforeDestroy() {
-    window.removeEventListener("scroll", this.handleScroll);
+  beforeDestroy () {
+    window.removeEventListener('scroll', this.handleScroll)
   },
   methods: {
-    handleScroll() {
-      this.scrolled = window.scrollY > 0;
+    handleScroll () {
+      this.scrolled = window.scrollY > 0
     },
-    scrollToTop() {
+    scrollToTop () {
       if (window.innerWidth >= 1280) {
-        return;
+        return
       }
-      window.scrollTo(0, 0);
+      window.scrollTo(0, 0)
     },
-    noop() {},
-  },
-};
+    noop () {}
+  }
+}
 </script>
 
 <style>
