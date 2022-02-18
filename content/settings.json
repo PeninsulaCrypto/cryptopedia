@@ -1,0 +1,11 @@
+{
+  "title": "cryptopedia docs",
+  "url": "https://github.com/PeninsulaCrypto/cryptopedia",
+    "logo": {
+      "light": "/logo-light.svg",
+      "dark": "/logo-dark.svg"
+    },
+    "github": "PeninsulaCrypto/cryptopedia",
+    "defaultBranch": "main",
+    "defaultDir":""
+  }
