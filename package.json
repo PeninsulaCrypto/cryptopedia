@@ -1,5 +1,5 @@
 {
-  "name": "cryptopedia",
+  "name": "docs",
   "private": true,
   "scripts": {
     "dev": "nuxt",
@@ -21,11 +21,10 @@
   },
   "devDependencies": {
     "@babel/core": "^7.17.0",
+    "@babel/eslint-parser": "^7.17.0",
     "@nuxtjs/eslint-config": "^8.0.0",
     "@nuxtjs/eslint-module": "^3.0.2",
-    "@babel/eslint-parser": "^7.5.4",
     "eslint": "^8.8.0",
-    "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-nuxt": "^2.0.0",
     "eslint-plugin-vue": "^7.5.0",
     "github-release-notes": "^0.17.3"
