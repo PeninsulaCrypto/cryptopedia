@@ -1,10 +1,6 @@
 ---
-title: Quick start
-category: Quick Start
+title: $GM Web3.0
 position: 1
-badge: Starter
 ---
 
-## How To Use
-
-Still building...
+Hi there, welcome to the world of Web3.0!
