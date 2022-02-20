@@ -59,7 +59,7 @@ export default theme({
   modules: ['@nuxtjs/gtm'],
 
   gtm: {
-    id: 'GTM-K4XN9CR' // Used as fallback if no runtime config is provided
+    id: 'GTM-T9R7BZ4' // Used as fallback if no runtime config is provided
   },
 
   publicRuntimeConfig: {
