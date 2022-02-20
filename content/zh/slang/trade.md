@@ -1,8 +1,7 @@
 ---
-title: NFT社区
+title: 交易社区
 category: 圈内行话
-position: 700
-badge: Starter
+position: 702
 ---
 
 ## gm / $gm

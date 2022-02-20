@@ -32,18 +32,20 @@ export default theme({
       iso: 'zh-CN',
       file: 'zh-CN.js',
       name: '简体中文'
-    }, {
-      code: 'en',
-      iso: 'en-US',
-      file: 'en-US.js',
-      name: 'English'
-    }],
+    }, 
+    // {
+    //   code: 'en',
+    //   iso: 'en-US',
+    //   file: 'en-US.js',
+    //   name: 'English'
+    // }
+  ],
     detectBrowserLanguage: {
       useCookie: true,
       cookieKey: 'i18n_redirected',
       redirectOn: 'root' // recommended
-    }
-    // defaultLocale: 'en'
+    },
+    defaultLocale: 'zh'  // NOTE: Chinese only at the beginning
   },
 
   content: {
