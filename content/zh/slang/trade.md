@@ -1,9 +1,17 @@
 ---
-title: 交易社区
+title: 交易相关
 category: 圈内行话
-position: 702
+position: 703
 ---
 
-## gm / $gm
+## W2E
 
-早上好
+> work-to-earn
+
+## P2E
+
+> play-to-earn
+
+## L2E
+
+> learn-to-earn
